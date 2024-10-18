@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* CSS MENU */
+.menu {
+    display: flex;
+    justify-content: center; /* Alinha todo o conteúdo no centro */
+    align-items: center;
+    background-color: #FCF8CC;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-center {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Espaço entre os itens */
+}
+
+.logo {
+    height: 100px;
+    margin-right: 100px; /* Adiciona espaço à direita da logo */
+    margin-left: 100px; /* Adiciona espaço à direita da logo */
+    align-items: center;
+}
+
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    margin: 0 5px;
+    color: #A2AEF7;
+}
+
+.icon-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    margin: 0 5px;
+    color: #FCF8CC;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.voltar-btn {
+    color: #A2AEF7;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #FCF8CC;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 999;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 8px 16px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+}
+
+main {
+    padding-top: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+/* CSS MENU */
+</style>
+<body>
+       <!-- Menu Superior -->
+       <header class="menu">
+        <div class="menu-center">
+            <button class="menu-btn" id="menuToggle">&#9776;</button>
+            <a href="site.html" class="voltar-btn">Voltar ao Site</a>
+            <a href="site.html" class="voltar-btn">Voltar ao Site</a>
+            <a href="site.html" class="voltar-btn">Voltar ao Site</a>
+            <img src="images/logo.png" alt="BetterHope Logo" class="logo">
+            <a href="site.html" class="voltar-btn">Voltar ao Site</a>
+            <a href="site.html" class="voltar-btn">Voltar ao Site</a>
+            <a href="site.html" class="voltar-btn">Voltar ao Site</a>
+        </div>
+    </header> 
+</body>
+</html>
