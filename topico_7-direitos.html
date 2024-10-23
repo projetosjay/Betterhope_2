@@ -29,7 +29,7 @@
         <nav class="itens_menu">
           <nav class="navbar navbar-light">
             <button class="navbar-toggler" type="button" id="toggleButton">
-              <span class="navbar-toggler-icon"></span>
+              <span class="fas fa-universal-access"></span>
             </button>
           </nav>
           <div id="sidebarMenu" class="acss">
@@ -126,14 +126,14 @@
     </br>
   </br>
       <div class="botoes-container">
-        <button class="botao">Direitos das criaças com Autismo</button>
-        <button class="botao">Direitos das criaças com síndrome de Down</button>
+        <button onclick="document.getElementById('autismo').scrollIntoView({ behavior: 'smooth' });" class="botao">Direitos das criaças com Autismo</button>
+        <button onclick="document.getElementById('down').scrollIntoView({ behavior: 'smooth' });" class="botao">Direitos das criaças com síndrome de Down</button>
       </div>
 
-
-    <div class="textoconteiner1">
-      <div style="text-align: justify;" class="titulotop">Direitos do autista</div>
-      <br>
+<section id="autismo">
+<div class="textoconteiner1">
+  <div style="text-align: justify;" class="titulotop">Direitos do autista</div>
+    <br>
       <h6 style="text-align: justify;"> As crianças com autismo têm uma série de direitos garantidos por leis e normas que visam assegurar sua inclusão, proteção e desenvolvimento. No Brasil, esses direitos estão previstos em legislações específicas.</h6>
       <br>
       <h2 class="container-subtitle">Direito à Saúde</h2>
@@ -156,13 +156,14 @@
       <br>
       <h2 class="container-subtitle">Direito à Não Discriminação</h2>
       <h6 style="text-align: justify;">A Lei Brasileira de Inclusão garante o direito de crianças com autismo a não serem discriminadas em qualquer ambiente social, educacional ou de saúde, assegurando a igualdade de oportunidades e a dignidade.</h6>
-      <br>
-    </div>
+    <br>
+</div>
+</section>
 
-    
-    <div class="textoconteiner1">
-      <div style="text-align: justify;" class="titulotop">Direitos de crianças com Down</div>
-      <br>
+<section id="down">
+<div class="textoconteiner1">
+  <div style="text-align: justify;" class="titulotop">Direitos de crianças com Down</div>
+    <br>
       <h6 style="text-align: justify;">As crianças com Síndrome de Down possuem direitos legais e civis que asseguram sua inclusão, proteção e pleno desenvolvimento. Esses direitos são garantidos por legislações específicas no Brasil, visando à igualdade e respeito às suas necessidades especiais.</h6>
       <br>
       <h2 class="container-subtitle">Direito à Saúde</h2>
@@ -188,15 +189,16 @@
       <br>
       <h2 class="container-subtitle">Direito ao Lazer e à Cultura</h2>
       <h6 style="text-align: justify;">Crianças com Síndrome de Down têm direito à inclusão em atividades culturais, esportivas e de lazer, com a garantia de acessibilidade e adaptação dessas atividades para promover seu pleno desenvolvimento social e físico.</h6>
-      <br>
-    </div>
+    <br>
+</div>
+</section>
 
 
        
-      <footer>
-        <div class="footer-container">
-            <div class="logo-section">
-                <img src="images/logo.png" alt="BetterHope Logo">
+<footer>
+     <div class="footer-container">
+        <div class="logo-section">
+            <img src="images/logo.png" alt="BetterHope Logo">
             </div>
             <div class="links-section">
                 <div class="shop-links">
@@ -205,7 +207,7 @@
                         <li><a href="topico_1-descoberta.html">Descoberta</a></li>
                         <li><a href="topico_2-aceitacao.html">Aceitação</a></li>
                         <li><a href="topico_3-gravidez.html">Gravidez</a></li>
-                        <li><a href="topico_4-contexto.html">Contexto famil</a></li>
+                        <li><a href="topico_4-contexto.html">Contexto familiar</a></li>
                         <li><a href="topico_5-educacao.html">Educação</a></li>
                         <li><a href="topico_6-convivio.html">Convívio escolar e social</a></li>
                         <li><a href="topico_7-direitos.html">Direitos</a></li>
@@ -231,11 +233,12 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© BetterHope 2024</p>
-        </div>
-    </footer>
+        <p>© BetterHope 2024</p>
+        <p>Informações baseadas em artigos científicos e fontes confiáveis. Consulte as <a href="https://www.jusbrasil.com.br/artigos/os-direitos-da-crianca-com-autismo-garantias-legais-e-sociais-no-brasil/2734456605?msockid=03991a59212d6b0f3a51083e20f06a3f">fontes</a> para mais detalhes.</p>
+    </div>
+</footer>
     
- <script>
+<script>
 const themeButtons = document.querySelectorAll('.theme-button');
 const body = document.body;
 

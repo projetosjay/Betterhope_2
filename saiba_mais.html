@@ -17,9 +17,10 @@
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="css/style.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -107,22 +108,20 @@
 </br>
 </br>
 </br>
-
         <div class="containerteste">
             <div class="coluna-imagem">
-                <img src="images-topicos/saiba mais/familia-sindrome.jpg" alt="Descrição da imagem">
+                <img src="images-topicos/saiba mais/familia-sindrome.jpg" alt="Pais brincando com sua filha ainda bebê no parque.">
             </div>
             <div class="coluna-texto">
                 <h2 style="color: #A2AEF7">Saiba Mais...</h2>
                 <p style="text-align: justify; font-size: 17px; color: #666">O BetterHope é uma plataforma inovadora criada para oferecer suporte e orientação, sabemos que cuidar de uma criança com necessidades especiais pode ser desafiador, mas também repleto de momentos significativos e gratificantes. Nosso objetivo é fornecer um ambiente acolhedor e informativo, onde as famílias possam encontrar o apoio necessário para promover o bem-estar de seus filhos e ajudar no desenvolvimento de suas capacidades únicas.</p>
             </div>
         </div>
-</br>
-</br>
-<div class="textoconteiner1" style="background-color: #f7f5e7;">
+
+<div class="textoconteiner1" style="background-color: white;">
 
   <div style="text-align: justify; color:#A2AEF7;" class="titulotop">O que é o BetterHope?</div>
-  <h6 style="text-align: justify;">O objetivo do projeto de TCC "BetterHope - Cuidando de Quem Cuida" é oferecer suporte e recursos para pais, cuidadores e tutores de crianças com Síndrome de Down ou Autismo. O projeto visa proporcionar informações relevantes sobre essas condições e promover um espaço de apoio emocional, permitindo que os cuidadores compartilhem experiências e encontrem suporte por meio de uma rede social chamada Hope. A plataforma Hope facilita a troca de informações e o diálogo entre pessoas que enfrentam desafios semelhantes, promovendo um ambiente de acolhimento e suporte mútuo.</h6>
+  <h6 style="text-align: justify;">O projeto de TCC "BetterHope - Cuidando de Quem Cuida" é oferecer suporte e recursos para pais, cuidadores e tutores de crianças com Síndrome de Down ou Autismo. O projeto visa proporcionar informações relevantes sobre essas condições e promover um espaço de apoio emocional, permitindo que os cuidadores compartilhem experiências e encontrem suporte por meio de uma rede social chamada Hope. A plataforma Hope facilita a troca de informações e o diálogo entre pessoas que enfrentam desafios semelhantes, promovendo um ambiente de acolhimento e suporte mútuo.</h6>
  
   <div style="text-align: justify; color:#A2AEF7;" class="titulotop">Nossa Missão</div>
   <h6 style="text-align: justify;">A missão do BetterHope é capacitar pais e responsáveis a enfrentar os desafios diários que surgem ao cuidar de uma criança com autismo ou Síndrome de Down. Fazemos isso oferecendo informações atualizadas, dicas práticas, ferramentas educativas e suporte emocional, sempre com foco em promover a inclusão e o desenvolvimento integral da criança. Queremos ser um ponto de referência onde as famílias possam se sentir seguras para buscar ajuda, compartilhar experiências e aprender sobre as melhores práticas no cuidado de seus filhos.</h6>
@@ -142,8 +141,6 @@
   <h6 style="text-align: justify;">No BetterHope, acreditamos que cada criança é única e tem o potencial de crescer e se desenvolver de maneira significativa. Nosso compromisso é com a qualidade da informação, com o respeito à diversidade de cada família e com a promoção de um ambiente de apoio e compreensão. Trabalhamos incansavelmente para fornecer os melhores recursos e garantir que os pais se sintam preparados e confiantes para enfrentar os desafios e celebrar as conquistas de seus filhos.</h6>
 </div>
 
-<br>
-<br>
 
 <footer>
   <div class="footer-container">
@@ -272,6 +269,23 @@
   </script>
   <!-- java libras -->
 
+
+  <!-- java descriçã das imagens -->
+  <script>
+    // JavaScript para ativar o hover
+    const imageContainer = document.querySelector('div[style*="position: relative"]');
+    const description = imageContainer.querySelector('div');
+  
+    imageContainer.addEventListener('mouseover', function() {
+      description.style.visibility = 'visible';
+      description.style.opacity = '1';
+    });
+  
+    imageContainer.addEventListener('mouseout', function() {
+      description.style.visibility = 'hidden';
+      description.style.opacity = '0';
+    });
+  </script>
 
 </body>
 </html>

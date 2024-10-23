@@ -29,7 +29,7 @@
         <nav class="itens_menu">
           <nav class="navbar navbar-light">
             <button class="navbar-toggler" type="button" id="toggleButton">
-              <span class="navbar-toggler-icon"></span>
+              <span class="fas fa-universal-access"></span>
             </button>
           </nav>
           <div id="sidebarMenu" class="acss">
@@ -103,12 +103,12 @@
         </ul>
       </nav>
     </header>
-    <div class="teste"><img class="config-img-topo" src="images-down-autismo/autismo/autismo-capa.jpg" alt="colocar imagem do conteiner" ></div>
+    <div class="teste"><img class="config-img-topo" src="images-down-autismo/autismo/autismo-capa.jpg" alt="Pai brincando de fazer desenhos com a filha autista." ></div>
   </br>
 </br>
         <div class="containerteste">
             <div class="coluna-imagem">
-                <img src="images-down-autismo/autismo/criança-autismo.png" alt="Descrição da imagem">
+                <img src="images-down-autismo/autismo/criança-autismo.png" alt="Criança autista brincando com tinta.">
             </div>
             <div class="coluna-texto">
                 <h2>Transtorno do espectro autista</h2>
@@ -119,14 +119,12 @@
 </br>
 
         <div class="botoes-container">
-            <button class="botao">Autismo</button>
-            <button class="botao">Níveis de suporte</button>
-            <button class="botao">Atividades recomendadas</button>
+            <button onclick="document.getElementById('autismo').scrollIntoView({ behavior: 'smooth' });" class="botao">Autismo</button>
+            <button onclick="document.getElementById('niveis').scrollIntoView({ behavior: 'smooth' });" class="botao">Níveis de suporte</button>
+            <button onclick="document.getElementById('atividades').scrollIntoView({ behavior: 'smooth' });" class="botao">Atividades recomendadas</button>
         </div>
 
-</br>
-</br>
-
+<section id="autismo">
 <div class="textoconteiner1">
   <div style="text-align: justify;" class="titulotop">Autismo</div>
   <br>
@@ -138,9 +136,9 @@
   <br>
   <h6 style="text-align: justify;">Portanto, o Transtorno do Espectro Autista (TEA), traz diversos desafios que afetam a comunicação, as interações sociais e o comportamento, podendo se manifestar de maneira singular em cada indivíduo. Compreender essas características é fundamental para criar um ambiente mais inclusivo e receptivo. Reconhecer e respeitar as necessidades particulares de cada indivíduo com autismo é necessário para promover sua inclusão social e emocional. Oferecendo o suporte necessário e chances de desenvolvimento, é possível ajudar essas pessoas a se sentirem mais confiantes e valorizadas, promovendo assim um convívio proporcional para todos. </h6>
 </div>
-
+</section>
  
-
+<section id="niveis">
 <div class="textoconteiner1">
   <div style="text-align: justify;" class="titulotop">Níveis de suporte</div>
   <br>
@@ -157,40 +155,36 @@
   <br>
   <h6 style="text-align: justify;"> De acordo com dados da Organização Pan-Americana de Saúde (Opas), os sinais do Autismo costumam ser aparentes até os cinco anos de idade na maioria dos casos. Considerando que o transtorno se manifesta na infância e pode continuar na adolescência e na fase adulta. Nesse sentido, pessoas com o espectro autista podem ter outras condições associadas, para além das dificuldades intelectuais, como destaca a Opas. Entre essas condições podem estar a epilepsia, a depressão, a ansiedade e o transtorno do déficit de atenção e hiperatividade (TDAH).  </h6>
 </div>
+</section>
 
-
-    <!-- Container de fundo -->
-    <div class="cards-bg">
-      <div style="text-align: justify;" class="titulotop">Atividades recomendadas</div>
+<section id="atividades">
+<div class="cards-bg">
+  <div style="text-align: justify;" class="titulotop">Atividades recomendadas</div>
     </br>
       <div class="cards-container">
-          <!-- Card 1 -->
           <div class="card">
-              <img src="images-down-autismo/autismo/autismo-massinha.jpg" alt="Atividade 1">
+              <img src="images-down-autismo/autismo/autismo-massinha.jpg" alt="Crianças autistas brincando com massinha.">
               <div class="card-content">
                   <h3>Atividade Sensorial com Massinhas</h3>
                   <p>A atividade sensorial com massinhas estimula o desenvolvimento motor fino, a criatividade e a imaginação, além de proporcionar uma experiência tátil que pode ser relaxante e terapêutica para crianças com autismo. Manipular massinhas ajuda a melhorar a coordenação das mãos e dedos, ao mesmo tempo que oferece uma forma de explorar texturas de maneira controlada. Essa atividade pode ser usada para reduzir a ansiedade, incentivar a expressão criativa e desenvolver habilidades sociais, especialmente quando realizada em grupo.</p>
               </div>
           </div>
-          <!-- Card 2 -->
           <div class="card">
-              <img src="images-down-autismo/autismo/autismo-blocos.jpg" alt="Atividade 2">
+              <img src="images-down-autismo/autismo/autismo-blocos.jpg" alt="Crianças autistas brincando com jogos de Construção">
               <div class="card-content">
                   <h3>Jogos de Construção</h3>
                   <p>Os jogos de construção, como blocos de montar, são ótimos para estimular o desenvolvimento cognitivo e motor de crianças com autismo. Ao construir estruturas, elas trabalham a coordenação motora fina e o pensamento lógico, enquanto exploram sua criatividade. Esses jogos também promovem a resolução de problemas e podem ser usados para melhorar a concentração e a paciência. Quando realizados em grupo, os jogos de construção incentivam a interação social e a cooperação, proporcionando oportunidades de aprendizado colaborativo.</p>
               </div>
           </div>
-          <!-- Card 3 -->
           <div class="card">
-              <img src="images-down-autismo/autismo/autismo-agua.jpg" alt="Atividade 3">
+              <img src="images-down-autismo/autismo/autismo-agua.jpg" alt="Criança brincando com água.">
               <div class="card-content">
                   <h3>Brincadeiras com Água</h3>
                   <p>As brincadeiras com água oferecem uma experiência sensorial divertida e envolvente para crianças com autismo. Essas atividades ajudam a desenvolver habilidades motoras, como agarrar e despejar, ao mesmo tempo que proporcionam estímulos visuais e táteis. Brincar com água pode ser relaxante e terapêutico, ajudando a reduzir a ansiedade e promover o bem-estar. Além disso, essas brincadeiras incentivam a exploração, a criatividade e o aprendizado através da observação de fenômenos simples, como flutuação e mistura de cores. Quando realizadas em grupo, promovem a socialização e a interação entre as crianças.</p>
               </div>
           </div>
-          <!-- Card 4 -->
           <div class="card">
-              <img src="images-down-autismo/autismo/autismo-desenho.jpg" alt="Atividade 4">
+              <img src="images-down-autismo/autismo/autismo-desenho.jpg" alt="Criança desenvolvendo habilidade de desenho e pintura">
               <div class="card-content">
                   <h3>Desenho e Pintura</h3>
                   <p>O desenho e a pintura são atividades criativas que oferecem uma forma expressiva para crianças com autismo comunicarem seus sentimentos e ideias. Essas atividades ajudam a desenvolver habilidades motoras finas e a coordenação, além de estimular a imaginação e a concentração. Ao utilizar cores e formas, as crianças podem explorar diferentes emoções e contar histórias visuais, promovendo o autoconceito e a autoexpressão. O ato de criar arte também pode ser terapêutico, proporcionando um espaço seguro para relaxar e lidar com a ansiedade. Além disso, essas atividades podem ser realizadas em grupo, favorecendo a socialização e a interação com outras crianças.</p>
@@ -198,6 +192,7 @@
           </div>
       </div>
   </div>
+</section>
 
 
   <footer>
@@ -212,7 +207,7 @@
                     <li><a href="topico_1-descoberta.html">Descoberta</a></li>
                     <li><a href="topico_2-aceitacao.html">Aceitação</a></li>
                     <li><a href="topico_3-gravidez.html">Gravidez</a></li>
-                    <li><a href="topico_4-contexto.html">Contexto famil</a></li>
+                    <li><a href="topico_4-contexto.html">Contexto familiar</a></li>
                     <li><a href="topico_5-educacao.html">Educação</a></li>
                     <li><a href="topico_6-convivio.html">Convívio escolar e social</a></li>
                     <li><a href="topico_7-direitos.html">Direitos</a></li>
@@ -239,6 +234,7 @@
     </div>
     <div class="footer-bottom">
         <p>© BetterHope 2024</p>
+        <p>Informações baseadas em artigos científicos e fontes confiáveis. Consulte as <a href="abnt">fontes</a> para mais detalhes.</p>
     </div>
 </footer>
 

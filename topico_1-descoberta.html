@@ -29,7 +29,7 @@
         <nav class="itens_menu">
           <nav class="navbar navbar-light">
             <button class="navbar-toggler" type="button" id="toggleButton">
-              <span class="navbar-toggler-icon"></span>
+              <span class="fas fa-universal-access"></span>
             </button>
           </nav>
           <div id="sidebarMenu" class="acss">
@@ -125,17 +125,14 @@
     </br>
   </br>
       <div class="botoes-container">
-        <button class="botao">O Começo</button>
-        <button class="botao">Diagnóstico</button>
-        <button class="botao">Momento da notícia e Profissionais</button>
-        <button class="botao">Como descobrir</button>
-        <button class="botao">Aborto</button>
-        <button class="botao">Sentimentos</button>
+        <button onclick="document.getElementById('comeco').scrollIntoView({ behavior: 'smooth' });" class="botao">O Começo</button>
+        <button onclick="document.getElementById('diagnostico').scrollIntoView({ behavior: 'smooth' });" class="botao">Diagnóstico</button>
+        <button onclick="document.getElementById('como').scrollIntoView({ behavior: 'smooth' });" class="botao">Como descobrir</button>
+        <button onclick="document.getElementById('momento').scrollIntoView({ behavior: 'smooth' });" class="botao">Momento da notícia e Profissionais</button>
+
       </div>
-    </br>
-  </br>
 
-
+<section id="comeco">
 <div class="containerdiagnostico">
   <div class="left-content">
       <h2 style="text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">O começo</h2>
@@ -151,11 +148,9 @@
       <img  src="images-topicos/descoberta/descoberta-comeco.jpg" alt="Descrição da Imagem" class="image">
   </div>
 </div>
+</section>
 
-
-</br>
-</br>
-
+<section id="diagnostico">
     <div class="textoconteiner1">
       <div style="text-align: justify;" class="titulotop">Diagnóstico</div>
       <br>
@@ -179,11 +174,9 @@
       <br>
       <h6 style="text-align: justify;">É importante destacar que, além dos estágios emocionais, as famílias podem se beneficiar de apoio psicológico, orientação médica adequada e redes de apoio que ajudem na adaptação. A aceitação e a reorganização emocional dependem também do suporte contínuo, tanto dos profissionais de saúde quanto da sociedade, para garantir o bem-estar da criança e de sua família.</h6>
     </div>
+</section>
 
-  </br>
-</br>
-
-
+<section id="como">
       <div class="containerdiagnostico">
         <div class="left-content">
             <img src="images-topicos/descoberta/ultrassom-como_descobrir.jpg" alt="Descrição da Imagem" class="image">
@@ -202,10 +195,9 @@
             </p>
         </div>
     </div>
+</section>
 
-  </br>
-</br>
-      
+<section id="momento">
       <div class="textoconteiner1">
         <div style="text-align: justify;" class="titulotop">Momento da notícia e Profissionais</div>
         <br>
@@ -228,23 +220,21 @@
         <br>
         <h6 style="text-align: justify;">Por fim, em respeito às famílias, é fundamental que a comunicação do diagnóstico seja feita de forma conjunta, para que ambos os pais possam receber a notícia ao mesmo tempo. Isso ajuda a fortalecer o suporte mútuo e cria um ambiente de compreensão e acolhimento desde o início. Oferecer essa notícia de maneira sensível, empática e clara pode fazer toda a diferença na forma como a família lida com o novo cenário e na construção de um futuro positivo para a criança.</h6>
         </div>
+      </section>
 
-    </br>
-  </br>
-
-      <footer>
-        <div class="footer-container">
-            <div class="logo-section">
-                <img src="images/logo.png" alt="BetterHope Logo">
-            </div>
-            <div class="links-section">
-                <div class="shop-links">
+<footer>
+  <div class="footer-container">
+      <div class="logo-section">
+          <img src="images/logo.png" alt="BetterHope Logo">
+      </div>
+        <div class="links-section">
+           <div class="shop-links">
                     <h3>Tópicos</h3>
                     <ul>
                         <li><a href="topico_1-descoberta.html">Descoberta</a></li>
                         <li><a href="topico_2-aceitacao.html">Aceitação</a></li>
                         <li><a href="topico_3-gravidez.html">Gravidez</a></li>
-                        <li><a href="topico_4-contexto.html">Contexto famil</a></li>
+                        <li><a href="topico_4-contexto.html">Contexto familar</a></li>
                         <li><a href="topico_5-educacao.html">Educação</a></li>
                         <li><a href="topico_6-convivio.html">Convívio escolar e social</a></li>
                         <li><a href="topico_7-direitos.html">Direitos</a></li>
@@ -270,9 +260,10 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© BetterHope 2024</p>
-        </div>
-    </footer>
+        <p>© BetterHope 2024</p>
+        <p>Informações baseadas em artigos científicos e fontes confiáveis. Consulte as <a href="https://www.scielo.br/j/csc/a/NJhtFtHhBLDG3Y3WBg9yhPv/">fontes</a> para mais detalhes.</p>
+    </div>
+</footer>
     
 
 <!-- java ajuste de cor -->

@@ -29,7 +29,7 @@
         <nav class="itens_menu">
           <nav class="navbar navbar-light">
             <button class="navbar-toggler" type="button" id="toggleButton">
-              <span class="navbar-toggler-icon"></span>
+              <span class="fas fa-universal-access"></span>
             </button>
           </nav>
           <div id="sidebarMenu" class="acss">
@@ -125,13 +125,13 @@
     </br>
   </br>
       <div class="botoes-container">
-        <button class="botao">Descoberta</button>
-        <button class="botao">Diagnóstico</button>
-        <button class="botao">Exames durante a gravidez</button>
+        <button onclick="document.getElementById('descoberta').scrollIntoView({ behavior: 'smooth' });" class="botao">Descoberta</button>
+        <button onclick="document.getElementById('diagnostico').scrollIntoView({ behavior: 'smooth' });" class="botao">Diagnóstico</button>
+        <button onclick="document.getElementById('exames').scrollIntoView({ behavior: 'smooth' });" class="botao">Exames durante a gravidez</button>
+        <button onclick="document.getElementById('aborto').scrollIntoView({ behavior: 'smooth' });" class="botao">Aborto</button>
       </div>
-    </br>
-  </br>
 
+<section id="descoberta">
 <div class="containerdiagnostico">
   <div class="left-content">
       <h2 style="text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">Descoberta</h2>
@@ -145,17 +145,14 @@
       <img  src="images-topicos/gravidez/gravidez-descoberta.jpg" alt="Descrição da Imagem" class="image">
   </div>
 </div>
+</section>
 
-
-</br>
-</br>
-
-
-      <div class="containerdiagnostico">
-        <div class="left-content">
-            <img src="images-topicos/gravidez/gravidez-diagnostico.jpg" alt="Descrição da Imagem" class="image">
-        </div>
-        <div class="right-content">
+<section id="diagnostico">
+<div class="containerdiagnostico">
+  <div class="left-content">
+    <img src="images-topicos/gravidez/gravidez-diagnostico.jpg" alt="Descrição da Imagem" class="image">
+  </div>
+      <div class="right-content">
         <h2 style="text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">Diagnóstico</h2>
          <br>
             <p style="text-align: justify;" class="text">
@@ -163,14 +160,11 @@
             <br>
             Além disso, esses exames podem ser solicitados se a mulher já teve um filho com Síndrome de Down, se o obstetra notar alguma alteração no ultrassom que possa indicar a síndrome, ou se o pai do bebê tiver alguma mutação relacionada ao cromossomo 21.            <br>
             </p>
-        </div>
     </div>
+</div>
+</section>
 
-    
-</br>
-</br>
-
-
+<section id="exames">
     <div class="textoconteiner1">
       <div style="text-align: justify;" class="titulotop">Exames durante a gravidez</div>
       <br>
@@ -194,10 +188,9 @@
       <br>
       <h6 style="text-align: justify;">Esses exames ajudam o médico a avaliar o desenvolvimento do bebê e identificar se há alterações no cromossomo 21, que está relacionado à Síndrome de Down.</h6>
     </div>
+  </section>
 
-</br>
-</br>
-
+  <section id="aborto">
   <div class="containerdiagnostico">
     <div class="left-content">
       <h2 style="text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">Aborto</h2>
@@ -213,10 +206,7 @@
         <img src="images-topicos/descoberta/aborto-descoberta.jpg" alt="Descrição da Imagem" class="image">
     </div>
   </div>
-    
-
-</br>
-</br>
+</section> 
 
 <footer>
   <div class="footer-container">
@@ -230,7 +220,7 @@
                   <li><a href="topico_1-descoberta.html">Descoberta</a></li>
                   <li><a href="topico_2-aceitacao.html">Aceitação</a></li>
                   <li><a href="topico_3-gravidez.html">Gravidez</a></li>
-                  <li><a href="topico_4-contexto.html">Contexto famil</a></li>
+                  <li><a href="topico_4-contexto.html">Contexto familiar</a></li>
                   <li><a href="topico_5-educacao.html">Educação</a></li>
                   <li><a href="topico_6-convivio.html">Convívio escolar e social</a></li>
                   <li><a href="topico_7-direitos.html">Direitos</a></li>
@@ -257,6 +247,7 @@
   </div>
   <div class="footer-bottom">
       <p>© BetterHope 2024</p>
+      <p>Informações baseadas em artigos científicos e fontes confiáveis. Consulte as <a href=" https://www.tuasaude.com/sindrome-de-down-na-gravidez/">fontes</a> para mais detalhes.</p>
   </div>
 </footer>
 

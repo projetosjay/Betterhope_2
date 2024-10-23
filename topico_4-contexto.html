@@ -29,7 +29,7 @@
         <nav class="itens_menu">
           <nav class="navbar navbar-light">
             <button class="navbar-toggler" type="button" id="toggleButton">
-              <span class="navbar-toggler-icon"></span>
+              <span class="fas fa-universal-access"></span>
             </button>
           </nav>
           <div id="sidebarMenu" class="acss">
@@ -126,17 +126,15 @@
     </br>
   </br>
       <div class="botoes-container">
-        <button class="botao">Mudanças</button>
-        <button class="botao">Os irmãos</button>
-        <button class="botao">Momento da notícia e Profissionais</button>
-        <button class="botao">Conflitos na família</button>
-        <button class="botao">Grupo de apoio para os pais</button>
-        <button class="botao">Grupo de apoio para os irmãos</button>
-        <button class="botao">O futuro</button>
+        <button onclick="document.getElementById('mudanca').scrollIntoView({ behavior: 'smooth' });" class="botao">Mudanças</button>
+        <button onclick="document.getElementById('irmaos').scrollIntoView({ behavior: 'smooth' });" class="botao">Os irmãos</button>
+        <button onclick="document.getElementById('conflitos').scrollIntoView({ behavior: 'smooth' });" class="botao">Conflitos na família</button>
+        <button onclick="document.getElementById('apoio').scrollIntoView({ behavior: 'smooth' });" class="botao">Grupo de apoio para os pais</button>
+        <button onclick="document.getElementById('grupo').scrollIntoView({ behavior: 'smooth' });" class="botao">Grupo de apoio para os irmãos</button>
+        <button onclick="document.getElementById('futuro').scrollIntoView({ behavior: 'smooth' });" class="botao">O futuro</button>
       </div>
-    </br>
-  </br>
 
+<section id="mudanca">     
 <div class="containerdiagnostico">
   <div class="left-content">
       <h2 style="text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">Mudanças</h2>
@@ -150,13 +148,9 @@
       <img  src="images-topicos/contexto/contexto-mudancas.jpg" alt="Descrição da Imagem" class="image">
   </div>
 </div>
+</section> 
 
-
-</br>
-</br>
-
-
-
+<section id="irmaos">
 <div class="containerdiagnostico">
   <div class="left-content">
       <img src="images-topicos/contexto/contexto-irmaos.jpg" alt="Descrição da Imagem" class="image">
@@ -170,10 +164,9 @@
       Conviver com um irmão com deficiência pode ser uma experiência desafiadora, cheia de sentimentos bons e ruins. O acompanhamento de um psicólogo é importante para apoiar os irmãos, fornecendo informações, orientação e ajudando-os a lidar com essa relação.      </p>
   </div>
 </div>
+</section>
 
-</br>
-</br>
-
+<section id="conflitos">
 <div class="containerdiagnostico">
   <div class="left-content">
       <img src="images-topicos/contexto/contexto-conflitos.jpg" alt="Descrição da Imagem" class="image">
@@ -188,10 +181,10 @@
       </p>
   </div>
 </div>
+</section>
 
-</br>
-</br>
 
+<section id="apoio">
     <div class="textoconteiner1">
       <div style="text-align: justify;" class="titulotop">Grupo de apoio para os pais</div>
       <br>
@@ -199,11 +192,9 @@
       <br>
       <h6 style="text-align: justify;"> Participar de grupos de intervenção e programas de apoio pode ser muito útil para os pais de crianças deficientes. Esses programas oferecem mais informações e recursos para enfrentar e se adaptar à nova situação, além de permitir que os pais compartilhem suas experiências com outras famílias que passam por desafios semelhantes. Se os pais tiverem dificuldades em lidar com o nascimento de um filho com deficiência, é importante que busquem o apoio necessário para se adaptar à nova rotina e melhorar os laços familiares.</h6>
     </div>
+</section>
 
-</br>
-</br>
-
-
+<section id="grupo">
 <div class="textoconteiner1">
   <div style="text-align: justify;" class="titulotop">Grupo de apoio para os irmãos</div>
   <br>
@@ -211,11 +202,9 @@
   <br>
   <h6 style="text-align: justify;"> Como cada família supera uma crise varia conforme seus recursos e a gravidade da situação. Esse é um momento em que podem ocorrer tanto crescimento e fortalecimento das relações quanto o risco de problemas emocionais, tanto para as pessoas envolvidas quanto para os laços familiares.</h6>
 </div>
+</section>
 
-</br>
-</br>
-
-
+<section id="futuro">
       <div class="containerdiagnostico">
         <div class="left-content">
             <img src="images-topicos/contexto/contexto-futuro.jpg" alt="Descrição da Imagem" class="image">
@@ -230,10 +219,8 @@
             </p>
         </div>
     </div>
+  </section>
 
-</br>
-</br>
-      
       
 <footer>
   <div class="footer-container">
@@ -247,7 +234,7 @@
                   <li><a href="topico_1-descoberta.html">Descoberta</a></li>
                   <li><a href="topico_2-aceitacao.html">Aceitação</a></li>
                   <li><a href="topico_3-gravidez.html">Gravidez</a></li>
-                  <li><a href="topico_4-contexto.html">Contexto famil</a></li>
+                  <li><a href="topico_4-contexto.html">Contexto familiar</a></li>
                   <li><a href="topico_5-educacao.html">Educação</a></li>
                   <li><a href="topico_6-convivio.html">Convívio escolar e social</a></li>
                   <li><a href="topico_7-direitos.html">Direitos</a></li>
@@ -274,6 +261,7 @@
   </div>
   <div class="footer-bottom">
       <p>© BetterHope 2024</p>
+      <p>Informações baseadas em artigos científicos e fontes confiáveis. Consulte as <a href="https://www.scielo.br/j/pcp/a/G88Kn76nWhwGZrCddBgkTMF/">fontes</a> para mais detalhes.</p>
   </div>
 </footer>
 

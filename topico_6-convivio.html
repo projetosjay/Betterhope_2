@@ -29,7 +29,7 @@
         <nav class="itens_menu">
           <nav class="navbar navbar-light">
             <button class="navbar-toggler" type="button" id="toggleButton">
-              <span class="navbar-toggler-icon"></span>
+              <span class="fas fa-universal-access"></span>
             </button>
           </nav>
           <div id="sidebarMenu" class="acss">
@@ -125,15 +125,15 @@
     </br>
   </br>
       <div class="botoes-container">
-        <button class="botao">A importância</button>
-        <button class="botao">O Papel da Família</button>
-        <button class="botao">Inclusão escolar</button>
+        <button onclick="document.getElementById('importancia').scrollIntoView({ behavior: 'smooth' });" class="botao">A importância</button>
+        <button onclick="document.getElementById('papel').scrollIntoView({ behavior: 'smooth' });" class="botao">O Papel da Família</button>
+        <button onclick="document.getElementById('inclusao').scrollIntoView({ behavior: 'smooth' });" class="botao">Inclusão escolar</button>
       </div>
 
 
-
-    <div class="textoconteiner1">
-      <div style="text-align: justify;" class="titulotop">A importância</div>
+<section id="importancia">
+<div class="textoconteiner1">
+  <div style="text-align: justify;" class="titulotop">A importância</div>
       <br>
       <h2 class="container-subtitle">Cenário atual</h2>
       <br>
@@ -144,9 +144,10 @@
       <br>
       <h2 class="container-subtitle">Importância da Intervenção Precoce</h2>
       <h6 style="text-align: justify;">A ausência de intervenções adequadas pode impactar negativamente o desenvolvimento global dessas crianças. A preparação para conviver em sociedade envolve terapias, atividades que estimulem habilidades motoras e cognitivas, além de suporte emocional tanto para a criança quanto para a família.</h6>
-    </div>
+</div>
+</section>
 
-
+<section id="papel">
 <div class="textoconteiner1">
   <div style="text-align: justify;" class="titulotop">O Papel da Família</div>
   <br>
@@ -160,8 +161,9 @@
   <h2 class="container-subtitle">Treinamento em Casa</h2>
   <h6 style="text-align: justify;">A interação e a convivência familiar são o ponto de partida para que a criança aprenda a se relacionar com outras pessoas. O envolvimento ativo da família com terapeutas e profissionais da saúde é fundamental para superar desafios típicos do autismo e da Síndrome de Down.</h6>
 </div>
+</section>
 
-
+<section id="inclusao">
 <div class="textoconteiner1">
   <div style="text-align: justify;" class="titulotop">Inclusão escolar</div>
   <br>
@@ -175,8 +177,9 @@
   <h2 class="container-subtitle">Crescimento Pessoal e Social</h2>
   <h6 style="text-align: justify;">O processo de inclusão não apenas beneficia as crianças com necessidades especiais, mas também ensina outras crianças a lidarem com a diversidade, formando uma sociedade mais empática e preparada para enfrentar as diferenças e adversidades da vida.</h6>
 </div>
+</section>
 
-      <footer>
+ <footer>
         <div class="footer-container">
             <div class="logo-section">
                 <img src="images/logo.png" alt="BetterHope Logo">
@@ -188,7 +191,7 @@
                         <li><a href="topico_1-descoberta.html">Descoberta</a></li>
                         <li><a href="topico_2-aceitacao.html">Aceitação</a></li>
                         <li><a href="topico_3-gravidez.html">Gravidez</a></li>
-                        <li><a href="topico_4-contexto.html">Contexto famil</a></li>
+                        <li><a href="topico_4-contexto.html">Contexto familiar</a></li>
                         <li><a href="topico_5-educacao.html">Educação</a></li>
                         <li><a href="topico_6-convivio.html">Convívio escolar e social</a></li>
                         <li><a href="topico_7-direitos.html">Direitos</a></li>
@@ -215,6 +218,7 @@
         </div>
         <div class="footer-bottom">
             <p>© BetterHope 2024</p>
+            <p>Informações baseadas em artigos científicos e fontes confiáveis. Consulte as <a href="https://institutoneurosaber.com.br/artigos/como-ajudar-a-promover-a-interacao-social-no-autismo/#:~:text=Estimular%20atitudes%20positivas%3B%20%E2%80%93%20Ampliar%20a%20capacidade%20cognitiva%2C,de%20melhor%3B%20%E2%80%93%20Adquirir%20mais%20autonomia%20na%20vida.">fontes</a> para mais detalhes.</p>
         </div>
     </footer>
     

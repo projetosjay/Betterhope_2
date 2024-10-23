@@ -29,7 +29,7 @@
         <nav class="itens_menu">
           <nav class="navbar navbar-light">
             <button class="navbar-toggler" type="button" id="toggleButton">
-              <span class="navbar-toggler-icon"></span>
+              <span class="fas fa-universal-access"></span>
             </button>
           </nav>
           <div id="sidebarMenu" class="acss">
@@ -125,13 +125,12 @@
     </br>
   </br>
       <div class="botoes-container">
-        <button class="botao">Fases da Aceitação</button>
-        <button class="botao">Como aceitar</button>
-        <button class="botao">Ajuda médica</button>
+        <button onclick="document.getElementById('fases').scrollIntoView({ behavior: 'smooth' });" class="botao">Fases da Aceitação</button>
+        <button onclick="document.getElementById('aceitar').scrollIntoView({ behavior: 'smooth' });" class="botao">Como aceitar</button>
+        <button onclick="document.getElementById('ajuda').scrollIntoView({ behavior: 'smooth' });" class="botao">Ajuda médica</button>
       </div>
-    </br>
-  </br>
 
+<section id="fases">
   <div class="textoconteiner1">
     <div style="text-align: justify;" class="titulotop">Fases da Aceitação</div>
     <br>
@@ -146,10 +145,9 @@
     <h2 class="container-subtitle">Aceitação</h2>
     <h6 style="text-align: justify;">A última etapa é a aceitação. Para que isso aconteça, os pais precisam ter uma visão clara e realista da criança e de sua condição. É importante que eles reconheçam que, antes de tudo, a criança com deficiência é uma criança como qualquer outra, com necessidades, problemas e questões do dia a dia. Esse é um ponto fundamental que deve ser transmitido aos pais para ajudá-los a aceitar plenamente a condição do filho.</h6>
   </div>
+</section>
 
-</br>
-</br>
-
+<section id="aceitar">
 <div class="containerdiagnostico">
   <div class="left-content">
       <h2 style="text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">Como aceitar</h2>
@@ -167,29 +165,25 @@
       <img  src="images-topicos/aceitacao/aceitacao-como.jpg" alt="Descrição da Imagem" class="image">
   </div>
 </div>
+</section>
 
-</br>
-</br>
-
-
-      <div class="containerdiagnostico">
-        <div class="left-content">
-            <img src="images-topicos/aceitacao/aceitacao-ajuda.jpg" alt="Descrição da Imagem" class="image">
-        </div>
-        <div class="right-content">
-        <h2 style="text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">Ajuda médica</h2>
-         <br>
-            <p style="text-align: justify;" class="text">
-              Os estudos analisados mostram que o diagnóstico de uma deficiência pode gerar várias emoções e reações nos pais, como dúvida, choque, frustração, culpa, tristeza, medo, insegurança, rejeição, revolta, negação, vergonha, isolamento, superproteção, entre outras.
-            <br>
-            <br>
-            Essas emoções podem variar em intensidade, assim como a capacidade dos pais de lidar com elas, o que pode dificultar o entendimento das informações passadas pela equipe médica durante o diagnóstico. Situações inesperadas ou desconhecidas tornam essa assimilação ainda mais difícil. Muitas vezes, a família tem dificuldade em expressar o que está sentindo, e o apoio de um psicólogo pode ser muito útil para ajudar a identificar e compreender os conflitos e sentimentos através de uma escuta acolhedora e apoio emocional.
-            </p>
-        </div>
+<section id="ajuda">
+<div class="containerdiagnostico">
+    <div class="left-content">
+      <img src="images-topicos/aceitacao/aceitacao-ajuda.jpg" alt="Descrição da Imagem" class="image">
     </div>
-
-</br>
-</br>
+    <div class="right-content">
+      <h2 style="text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">Ajuda médica</h2>
+      <br>
+      <p style="text-align: justify;" class="text">
+      Os estudos analisados mostram que o diagnóstico de uma deficiência pode gerar várias emoções e reações nos pais, como dúvida, choque, frustração, culpa, tristeza, medo, insegurança, rejeição, revolta, negação, vergonha, isolamento, superproteção, entre outras.
+       <br>
+       <br>
+      Essas emoções podem variar em intensidade, assim como a capacidade dos pais de lidar com elas, o que pode dificultar o entendimento das informações passadas pela equipe médica durante o diagnóstico. Situações inesperadas ou desconhecidas tornam essa assimilação ainda mais difícil. Muitas vezes, a família tem dificuldade em expressar o que está sentindo, e o apoio de um psicólogo pode ser muito útil para ajudar a identificar e compreender os conflitos e sentimentos através de uma escuta acolhedora e apoio emocional.
+      </p>
+    </div>
+</div>
+</section>
 
 <footer>
   <div class="footer-container">
@@ -203,7 +197,7 @@
                   <li><a href="topico_1-descoberta.html">Descoberta</a></li>
                   <li><a href="topico_2-aceitacao.html">Aceitação</a></li>
                   <li><a href="topico_3-gravidez.html">Gravidez</a></li>
-                  <li><a href="topico_4-contexto.html">Contexto famil</a></li>
+                  <li><a href="topico_4-contexto.html">Contexto familiar</a></li>
                   <li><a href="topico_5-educacao.html">Educação</a></li>
                   <li><a href="topico_6-convivio.html">Convívio escolar e social</a></li>
                   <li><a href="topico_7-direitos.html">Direitos</a></li>
@@ -230,6 +224,7 @@
   </div>
   <div class="footer-bottom">
       <p>© BetterHope 2024</p>
+      <p>Informações baseadas em artigos científicos e fontes confiáveis. Consulte as <a href="https://desenvolviver.com/autismo-e-outros-transtornos/o-desafio-de-aceitar-o-autismo-de-um-filho/">fontes</a> para mais detalhes.</p>
   </div>
 </footer>
 
