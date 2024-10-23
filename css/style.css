@@ -146,17 +146,20 @@ nav.itens_menu ul li ul li {
 }
 nav.itens_menu ul li ul li a {
   padding: 10px;
+  background-color: #fcf8ccad;
 }
 nav.itens_menu ul li ul li a:hover {
   color: black;
 }
 .logo {
   margin: 0 20px; /* Espaçamento ao redor da logo */
-  padding-top: 100px;
+  padding-top: 0; /* Remove o padding-top que estava causando o deslocamento da logo */
 }
+
 .img_logo {
-  height: 150px; 
+  height: 110px; /* Ajusta a altura da logo para caber no menu de 100px */
 }
+
 .img_centro {
   display: block;
   margin-left: auto;
@@ -795,14 +798,20 @@ a:focus {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.textoconteiner1{
+.textoconteiner1 {
   width: 70%;
   height: 50%;
   padding: 5%;
-  margin: 0 auto; 
+  margin: 0px auto; /* Diminui a margem superior e inferior para 2px */
   color: #666;
   text-align: justify;
+  background-color: white;
 }
+.textoconteiner1 * {
+  margin: 0; /* Remove qualquer margem de elementos filhos */
+  padding: 0; /* Remove qualquer padding de elementos filhos, se necessário */
+}
+
 
 .agrupamento{
   width: 100%;            /* Define a largura do container */
@@ -1270,16 +1279,39 @@ a:focus {
 #sidebarMenu {
   position: fixed;
   top: 0;
-  right: -250px;
+  left: -250px; /* Alterado de 'right' para 'left' */
   height: 100%;
   width: 250px;
   background-color: #A2AEF7;
-  transition: right 0.3s ease;
+  transition: left 0.3s ease; /* Alterado de 'right' para 'left' */
+  overflow-y: auto;
 }
 
-/* Quando ativo, move o menu para a esquerda (visível) */
+/* Quando ativo, move o menu para a direita (visível) */
 #sidebarMenu.active {
-  right: 0;
+  left: 0; /* Alterado de 'right' para 'left' */
+}
+
+/* Estilos da barra de rolagem */
+#sidebarMenu::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+#sidebarMenu::-webkit-scrollbar-track {
+  background: #f7f5e7; /* Cor de fundo da barra */
+  border-radius: 10px; /* Deixa os cantos arredondados */
+}
+
+#sidebarMenu::-webkit-scrollbar-thumb {
+  background-color: #A2AEF7; /* Cor da barra de rolagem */
+  border-radius: 10px; /* Deixa os cantos da barra arredondados */
+  border: 2px solid #f7f5e7; /* Espaço entre a barra e o track */
+}
+
+/* Estilos para browsers que suportam a propriedade nativa (Firefox) */
+#sidebarMenu {
+  scrollbar-width: thin; /* Faz a barra de rolagem mais fina */
+  scrollbar-color: #A2AEF7 #f7f5e7; /* Cor da barra e do fundo */
 }
 
 /* Links e texto do menu */
@@ -1338,8 +1370,8 @@ a:focus {
 }
 
 .traditional-theme button:hover{
-  color: black; /* Cor dos títulos e textos no tema claro */
-  background-color: rgb(189, 189, 189);
+  color: #f7f5e7; /* Cor dos títulos e textos no tema claro */
+  background-color: #7680c5;
 }
 
 
@@ -1464,25 +1496,51 @@ a:focus {
 .dark-theme p,
 .dark-theme div,
 .dark-theme li,
+.dark-theme ul,
 .dark-theme nav,
+.dark-theme a,
 .dark-theme header {
   color: white; /* Cor dos títulos e textos no tema escuro */
   background-color: #000;
 }
 
-.dark-theme button {
-  color: white; /* Cor dos títulos e textos no tema escuro */
-  background-color: rgb(43, 43, 43);
+.dark-theme .nav.itens_menu ul li a {
+  display: block;
+  padding: 5px 15px;
+  font-family: 'gilroy';
+  font-size: 15px;
+  text-decoration: none;
+  color: yellow;
+}
+.dark-theme .nav.itens_menu ul li a:hover {
+  background-color: blue; /* Cor de fundo ao passar o mouse */
+  border-radius: 5px;
+  color: #000000;
 }
 
-.dark-theme button:hover {
+
+
+.dark-theme button {
   color: black; /* Cor dos títulos e textos no tema escuro */
   background-color: white;
 }
 
+.dark-theme button:hover {
+  color: white; /* Cor dos títulos e textos no tema escuro */
+  background-color: gray;
+}
+
+.dark-theme a {
+  color: white;
+}
+
+.dark-theme a:hover {
+  color: black;
+  background-color: white;
+}
 
 .dark-theme .theme-button{
-  color: white; /* Cor dos títulos e textos no tema escuro */
+  color: white; 
   background-color: rgb(43, 43, 43);
 }
 
@@ -1542,47 +1600,6 @@ a:focus {
 }
 /*titulo aceitação*/
 
-/*RESPONSIVIDADE Menu*/
-     /* Estilos gerais */
-     .itens_menu {
-      background-color: #fff; /* Cor de fundo do menu */
-    }
-
-    .navbar-toggler {
-      border: none; /* Remove bordas do botão */
-    }
-
-    /* Menu Responsivo */
-    @media (max-width: 768px) {
-      #sidebarMenu {
-        display: none; /* Oculta o menu lateral inicialmente */
-        position: absolute; /* Permite que o menu flutue sobre o conteúdo */
-        background-color: #f8f9fa; /* Fundo claro */
-        width: 100%; /* Largura total */
-        z-index: 999; /* Garante que o menu fique acima de outros conteúdos */
-      }
-
-      #menuList {
-        display: flex; /* Flex para alinhar itens em coluna */
-        flex-direction: column; /* Coluna para menu */
-        padding: 0; /* Remove o preenchimento */
-        margin: 0; /* Remove a margem */
-        list-style-type: none; /* Remove os marcadores */
-      }
-
-      #menuList li {
-        padding: 10px; /* Espaçamento entre os itens */
-      }
-
-      #toggleButton:focus {
-        outline: none; /* Remove contorno ao focar no botão */
-      }
-
-      .navbar-toggler.active + #sidebarMenu {
-        display: block; /* Exibe o menu quando o botão é clicado */
-      }
-    }
-/*RESPONSIVIDADE Menu*/
 
 
 
@@ -1772,6 +1789,7 @@ body {
   overflow: hidden;
   transition: transform 0.3s ease;
 }
+
 
 .card:hover {
   transform: scale(1.05);
