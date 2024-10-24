@@ -113,24 +113,15 @@
 </br>
       <div class="container-aceitacao">
         <div class="titles">
-          <h1 style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">O Processo</h1>
-          <h2 style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">Da</h2>
-          <h3 style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">Educação</h3>
+          <h1>O Processo</h1>
+          <h2>Da</h2>
+          <h3>Educação</h3>
         </div>
         <div class="text">
           <p>
             A parceria entre a família e a escola é fundamental para promover a autonomia dos alunos com síndrome de down ou autismo. Essa colaboração é importante tanto para o desenvolvimento educacional quanto para o acolhimento dos estudantes. </p>
         </div>
       </div>
-    </br>
-  </br>
-      <div class="botoes-container">
-        <button onclick="document.getElementById('papel').scrollIntoView({ behavior: 'smooth' });" class="botao">O papel da família na educação inclusiva</button>
-        <button onclick="document.getElementById('ausencia').scrollIntoView({ behavior: 'smooth' });" class="botao">A ausencia familiar na educação</button>
-        <button onclick="document.getElementById('parceria').scrollIntoView({ behavior: 'smooth' });" class="botao">Parceria da família com a escola</button>
-        <button onclick="document.getElementById('presença').scrollIntoView({ behavior: 'smooth' });" class="botao">A presença participativa da família</button>
-      </div>
-
 <section id="papel">
 <div class="textoconteiner1">
   <div style="text-align: left;" class="titulotop">O papel da família na educação inclusiva</div>
@@ -142,7 +133,7 @@
 <section id="ausencia">
 <div class="containerdiagnostico">
   <div class="left-content">
-      <h2 style="text-align: justify; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">A ausencia familiar na educação</h2>
+      <h2 style="text-align: justify;" class="title">A ausencia familiar na educação</h2>
       <br>
       <p style="text-align: justify;" class="text">
         A falta de envolvimento familiar é uma reclamação comum entre professores e profissionais da educação, que muitas vezes atribuem as dificuldades de aprendizagem à ausência desse apoio. Sem o diálogo sobre as dificuldades do aluno e a participação da família em eventos escolares, importantes para a autonomia e confiança do estudante, o desenvolvimento pode ser prejudicado.        <br>
@@ -161,7 +152,7 @@
     <img src="images-topicos/educacao/educacao-parceria.jpg" alt="Descrição da Imagem" class="image">
     </div>
     <div class="right-content">
-    <h2 style="text-align: justify; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">Parceria da família com a escola</h2>
+    <h2 style="text-align: justify;" class="title">Parceria da família com a escola</h2>
     <br>
     <p style="text-align: justify;" class="text"> A parceria entre família e escola é essencial no processo de ensino de alunos com deficiência. Os pais têm um papel importante e precisam estar abertos a colaborar, pois a escola precisa melhorar para todos. 
     <br>
@@ -230,13 +221,11 @@
 </footer>
 
 
-<!-- java ajuste de cor -->
  <script>
-// script.js
+
 const themeButtons = document.querySelectorAll('.theme-button');
 const body = document.body;
 
-// Verifica o tema atual e aplica o tema padrão
 if (!localStorage.getItem('theme')) {
     localStorage.setItem('theme', 'traditional');
 }
@@ -251,10 +240,8 @@ themeButtons.forEach(button => {
 });
 
 function applyTheme(theme) {
-    // Remove todas as classes de tema
     body.classList.remove('traditional-theme', 'monochrome-theme', 'high-contrast-light-theme', 'high-contrast-dark-theme', 'dark-theme');
     
-    // Adiciona a classe do tema selecionado
     if (theme === 'traditional') {
         body.classList.add('traditional-theme');
     } else if (theme === 'monochrome') {
@@ -264,18 +251,13 @@ function applyTheme(theme) {
     } else if (theme === 'high-contrast-dark') {
         body.classList.add('high-contrast-dark-theme');
     } else if (theme === 'dark') {
-        body.classList.add('dark-theme'); // Adiciona o tema escuro
+        body.classList.add('dark-theme'); 
     }
     
-    // Armazena o tema selecionado no localStorage
     localStorage.setItem('theme', theme);
 }
 
 </script>
- <!-- java ajuste de cor -->
-
-
-<!-- java tamanho da fonte -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script>
   document.getElementById('toggleButton').addEventListener('click', function () {
@@ -284,7 +266,7 @@ function applyTheme(theme) {
   });
 
   var content = document.querySelector('.content');
-  var currentFontSize = 16; // Tamanho padrão da fonte
+  var currentFontSize = 16; 
 
   document.getElementById('increaseFont').addEventListener('click', function () {
     currentFontSize += 2;
@@ -292,16 +274,14 @@ function applyTheme(theme) {
   });
 
   document.getElementById('decreaseFont').addEventListener('click', function () {
-    if (currentFontSize > 10) { // Limite mínimo para a fonte
+    if (currentFontSize > 10) { 
       currentFontSize -= 2;
       content.style.fontSize = currentFontSize + 'px';
     }
   });
 </script>
-<!-- java tamanho da fonte -->
 
 
-<!-- java libras -->
 <div vw class="enabled"> 
   <div vw-access-button class="active"></div>
   <div vw-plugin-wrapper> 
@@ -313,7 +293,6 @@ function applyTheme(theme) {
 <script>
   new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
-<!-- java libras -->
 
 </body>
 </html>

@@ -113,9 +113,9 @@
 </br>
       <div class="container-aceitacao">
         <div class="titles">
-          <h1 style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">Processo Do </h1>
-          <h2 style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">Contexto Familiar</h2>
-          <h3 style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);"></h3>
+          <h1>Processo Do </h1>
+          <h2>Contexto Familiar</h2>
+          <h3></h3>
         </div>
         <div class="text">
           <p>
@@ -123,21 +123,10 @@
             A família é o primeiro grupo em que a pessoa é inserida, e sua importância é grande, pois ela influencia o comportamento e a formação da personalidade. O nascimento de uma criança pode trazer mudanças para toda a estrutura familiar. Não há nada que cause mais mudanças ou desafios na família do que a chegada de uma nova criança. </p>
         </div>
       </div>
-    </br>
-  </br>
-      <div class="botoes-container">
-        <button onclick="document.getElementById('mudanca').scrollIntoView({ behavior: 'smooth' });" class="botao">Mudanças</button>
-        <button onclick="document.getElementById('irmaos').scrollIntoView({ behavior: 'smooth' });" class="botao">Os irmãos</button>
-        <button onclick="document.getElementById('conflitos').scrollIntoView({ behavior: 'smooth' });" class="botao">Conflitos na família</button>
-        <button onclick="document.getElementById('apoio').scrollIntoView({ behavior: 'smooth' });" class="botao">Grupo de apoio para os pais</button>
-        <button onclick="document.getElementById('grupo').scrollIntoView({ behavior: 'smooth' });" class="botao">Grupo de apoio para os irmãos</button>
-        <button onclick="document.getElementById('futuro').scrollIntoView({ behavior: 'smooth' });" class="botao">O futuro</button>
-      </div>
-
 <section id="mudanca">     
 <div class="containerdiagnostico">
   <div class="left-content">
-      <h2 style="text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">Mudanças</h2>
+      <h2 style="text-align: center;" class="title">Mudanças</h2>
       <br>
       <p style="text-align: justify;" class="text">
         A família é o primeiro grupo em que a pessoa é inserida, e sua importância é grande, pois ela influencia o comportamento e a formação da personalidade. O nascimento de uma criança pode trazer mudanças para toda a estrutura familiar. Não há nada que cause mais mudanças ou desafios na família do que a chegada de uma nova criança.        <br>
@@ -156,7 +145,7 @@
       <img src="images-topicos/contexto/contexto-irmaos.jpg" alt="Descrição da Imagem" class="image">
   </div>
   <div class="right-content">
-  <h2 style="text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">Os Irmãos</h2>
+  <h2 style="text-align: center;" class="title">Os Irmãos</h2>
    <br>
       <p style="text-align: justify;" class="text">
         É de se destacar tanto os aspectos positivos quanto os negativos mencionados pelos irmãos de crianças com deficiência. Entre os pontos positivos, os irmãos relatam que se tornam mais maduros, responsáveis, altruístas, tolerantes e desenvolvem preocupações humanitárias. Além disso, sentem um maior senso de união na família, mais autoconfiança e independência. No entanto, os irmãos tendem a lidar melhor com a situação quando a família é maior, as condições financeiras são melhores, os pais têm uma atitude positiva em relação à criança com deficiência, os irmãos são mais novos, a criança com deficiência ainda é pequena e a deficiência é menos grave.      <br>
@@ -172,7 +161,7 @@
       <img src="images-topicos/contexto/contexto-conflitos.jpg" alt="Descrição da Imagem" class="image">
   </div>
   <div class="right-content">
-  <h2 style="text-align: justify; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">Conflitos na família</h2>
+  <h2 style="text-align: justify;" class="title">Conflitos na família</h2>
    <br>
       <p style="text-align: justify;" class="text">
         A ideia de que famílias com filhos deficientes têm, necessariamente, sua qualidade de vida abalada precisa ser repensada. Os conflitos não surgem diretamente por causa da deficiência, mas pela capacidade da família de se adaptar à situação.      <br>
@@ -210,7 +199,7 @@
             <img src="images-topicos/contexto/contexto-futuro.jpg" alt="Descrição da Imagem" class="image">
         </div>
         <div class="right-content">
-        <h2 style="text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">O futuro</h2>
+        <h2 style="text-align: center;" class="title">O futuro</h2>
          <br>
             <p style="text-align: justify;" class="text">
               Para famílias com um membro com deficiência, as fases de desenvolvimento podem ser afetadas pela adaptação da família a essa situação. Além das crises normais que qualquer família enfrenta, essas famílias também lidam com as particularidades da deficiência, suas características e seu desenvolvimento ao longo do tempo. Os pais de crianças com deficiência se preocupam continuamente, desde o nascimento do filho até a velhice, principalmente porque há uma falta de instituições que possam cuidar dessas pessoas à medida que envelhecem.            <br>
@@ -266,13 +255,10 @@
 </footer>
 
 
-<!-- java ajuste de cor -->
  <script>
-// script.js
 const themeButtons = document.querySelectorAll('.theme-button');
 const body = document.body;
 
-// Verifica o tema atual e aplica o tema padrão
 if (!localStorage.getItem('theme')) {
     localStorage.setItem('theme', 'traditional');
 }
@@ -287,10 +273,8 @@ themeButtons.forEach(button => {
 });
 
 function applyTheme(theme) {
-    // Remove todas as classes de tema
     body.classList.remove('traditional-theme', 'monochrome-theme', 'high-contrast-light-theme', 'high-contrast-dark-theme', 'dark-theme');
     
-    // Adiciona a classe do tema selecionado
     if (theme === 'traditional') {
         body.classList.add('traditional-theme');
     } else if (theme === 'monochrome') {
@@ -300,18 +284,15 @@ function applyTheme(theme) {
     } else if (theme === 'high-contrast-dark') {
         body.classList.add('high-contrast-dark-theme');
     } else if (theme === 'dark') {
-        body.classList.add('dark-theme'); // Adiciona o tema escuro
+        body.classList.add('dark-theme'); 
     }
     
-    // Armazena o tema selecionado no localStorage
     localStorage.setItem('theme', theme);
 }
 
 </script>
- <!-- java ajuste de cor -->
 
 
-<!-- java tamanho da fonte -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script>
   document.getElementById('toggleButton').addEventListener('click', function () {
@@ -320,7 +301,7 @@ function applyTheme(theme) {
   });
 
   var content = document.querySelector('.content');
-  var currentFontSize = 16; // Tamanho padrão da fonte
+  var currentFontSize = 16; 
 
   document.getElementById('increaseFont').addEventListener('click', function () {
     currentFontSize += 2;
@@ -328,16 +309,15 @@ function applyTheme(theme) {
   });
 
   document.getElementById('decreaseFont').addEventListener('click', function () {
-    if (currentFontSize > 10) { // Limite mínimo para a fonte
+    if (currentFontSize > 10) { 
+      
       currentFontSize -= 2;
       content.style.fontSize = currentFontSize + 'px';
     }
   });
 </script>
-<!-- java tamanho da fonte -->
 
 
-<!-- java libras -->
 <div vw class="enabled"> 
   <div vw-access-button class="active"></div>
   <div vw-plugin-wrapper> 
@@ -349,7 +329,6 @@ function applyTheme(theme) {
 <script>
   new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
-<!-- java libras -->
 
 </body>
 </html>
