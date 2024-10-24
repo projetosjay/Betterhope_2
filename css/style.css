@@ -17,14 +17,12 @@
   top: 0;
 }
 .centralizado {
-    text-align: center; /* Centraliza o texto dentro do elemento */
-    margin-top: 20px; /* Ajuste opcional para margem superior */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center; 
+    margin-top: 20px; 
 }
 
 
 
-/* Titulos */
 h1 {
         font-size: 3em;
         margin-top: 16%;
@@ -57,64 +55,59 @@ h1 {
     .fonte{
       font-family: 'yeseva';
     }
-    /* Titulos */
 
 
 
-/* Equipe-index */
 .equipe{
   font-family: Arial, sans-serif;
   font-size: 120%;
   color: #A2AEF7;
 }
     .circle-image {
-      display: flex; /* Utiliza flexbox para alinhar os itens horizontalmente */
-      justify-content: flex-end; /* Alinha os itens à direita */
-      align-items: center; /* Centraliza os itens verticalmente */
-      height: 50px; /* Altura ajustada conforme necessário */
+      display: flex; 
+      justify-content: flex-end; 
+      align-items: center;
+      height: 50px;
       width: 50%;
     }
     
     .circle-item {
-      width: 50px; /* Define a largura dos itens */
-      height: 50px; /* Define a altura dos itens */
-      border-radius: 50%; /* Faz com que cada item seja exibido como um círculo */
-      overflow: hidden; /* Garante que a imagem dentro do círculo não vaze */
-      margin: 0 5px; /* Espaçamento entre os itens */
+      width: 50px; 
+      height: 50px; 
+      border-radius: 50%; 
+      overflow: hidden; 
+      margin: 0 5px; 
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     }
     
     .circle-item img {
-      width: 100%; /* Garante que a imagem ocupe todo o espaço do círculo */
-      height: 100%; /* Garante que a imagem ocupe todo o espaço do círculo */
-      object-fit: cover; /* Mantém a proporção da imagem */
-      border-radius: 50%; /* Faz com que a imagem seja exibida como um círculo */
+      width: 100%; 
+      height: 100%; 
+      object-fit: cover; 
+      border-radius: 50%; 
     }
-  /* Equipe-index */
+ 
 
-
-
-  /* Menu */
 nav.itens_menu{
   background: #FCF8CC;
-  height: 100px; /* Altura ajustada para acomodar a logo */
+  height: 100px; 
   display: flex;
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
-  border-bottom: 2px solid #A2AEF7; /* Adiciona uma borda ao redor do menu */
-  padding: 10px; /* Adiciona espaçamento interno */
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #A2AEF7; 
+  padding: 10px; 
   width: 100%;
 }
 nav.itens_menu ul {
   display: flex;
   list-style: none;
-  align-items: center; /* Alinha os itens verticalmente */
+  align-items: center;
   padding: 0;
   margin: 0;
 }
 nav.itens_menu ul li {
   position: relative;
-  margin: 0 10px; /* Espaçamento entre os itens do menu */
+  margin: 0 10px; 
 }
 nav.itens_menu ul li a {
   display: block;
@@ -125,7 +118,7 @@ nav.itens_menu ul li a {
   color: #A2AEF7;
 }
 nav.itens_menu ul li a:hover {
-  background-color: #c1c8f8; /* Cor de fundo ao passar o mouse */
+  background-color: #c1c8f8; 
   border-radius: 5px;
   color: #000000;
 }
@@ -134,7 +127,7 @@ nav.itens_menu ul li ul {
   display: none;
   background: #fcf8cc31;
   position: absolute;
-  top: 100%; /* Ajusta a posição para abaixo do item do menu */
+  top: 100%; 
   left: 0;
   z-index: 1000;
 }
@@ -152,12 +145,12 @@ nav.itens_menu ul li ul li a:hover {
   color: black;
 }
 .logo {
-  margin: 0 20px; /* Espaçamento ao redor da logo */
-  padding-top: 0; /* Remove o padding-top que estava causando o deslocamento da logo */
+  margin: 0 20px; 
+  padding-top: 0; 
 }
 
 .img_logo {
-  height: 110px; /* Ajusta a altura da logo para caber no menu de 100px */
+  height: 110px; 
 }
 
 .img_centro {
@@ -170,16 +163,13 @@ h4{
 }
 .def{
   background: #776f11;
-  height: 100px; /* Altura ajustada para acomodar a logo */
+  height: 100px; 
   display: flex;
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
-  padding: 10px; /* Adiciona espaçamento interno */
+  justify-content: center; 
+  align-items: center; 
+  padding: 10px; 
   width: auto;
 }
-  /* Menu */
-
-
 
 /*CSS PARA ARRUMAR*/
 body {
@@ -253,7 +243,6 @@ body {
   position: relative;
 }
 
-/*header section*/
 .hero_area {
   background-image: url(../images/hero-bg.png);
 }
@@ -366,9 +355,6 @@ a:focus {
   background-image: url(../images/menu.png);
   background-size: 55px;
 }
-
-/*end header section*/
-
 
 .menu_fixed-position {
   position: fixed;
@@ -750,7 +736,6 @@ a:focus {
   margin-right: 12px;
 }
 
-/* footer section*/
 .footer_section {
   background-color: #201f33;
   font-weight: 500;
@@ -769,14 +754,11 @@ a:focus {
 .footer_section a {
   color: #ffffff;
 }
-/*# sourceMappingURL=style.css.map */
 
-/*css topicos*/
 .test {
   width: 100%;
   height: 85%;
   padding: 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #A2AEF7;
   text-align: center;
 }
@@ -785,7 +767,6 @@ a:focus {
   width: 100%;
   height: 40%;
   border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .titulotop{
@@ -795,34 +776,33 @@ a:focus {
   margin-bottom: 0%;
   text-align: center;
   color: #A2AEF7;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .textoconteiner1 {
   width: 70%;
   height: 50%;
   padding: 5%;
-  margin: 0px auto; /* Diminui a margem superior e inferior para 2px */
+  margin: 0px auto; 
   color: #666;
   text-align: justify;
   background-color: white;
 }
 .textoconteiner1 * {
-  margin: 0; /* Remove qualquer margem de elementos filhos */
-  padding: 0; /* Remove qualquer padding de elementos filhos, se necessário */
+  margin: 0; 
+  padding: 0; 
 }
 
 
 .agrupamento{
-  width: 100%;            /* Define a largura do container */
-  max-width: 100%;     /* Define a largura máxima */
-  margin: 0 auto;        /* Centraliza o container na página */
-  padding: 15px;         /* Adiciona espaçamento interno */
-  background-color: white; /* Cor de fundo opcional */
+  width: 100%;           
+  max-width: 100%;   
+  margin: 0 auto;       
+  padding: 15px;       
+  background-color: white; 
   display: flex;
-  grid-template-columns: auto 1fr; /* Define duas colunas: uma para o título e outra para o texto */
+  grid-template-columns: auto 1fr; 
   align-items: flex-start;
-  gap: 5px; /* Espaço entre o título e o texto */
+  gap: 5px; 
 }
 
 .textoconteiner2{
@@ -845,7 +825,7 @@ a:focus {
   margin-bottom: 0%;
   color: #A2AEF7;
   text-align: center;
-  align-items: center; /* Centraliza os itens verticalmente */
+  align-items: center; 
   flex: 1;
 }
 
@@ -889,7 +869,7 @@ a:focus {
 }
 
 .carousel-card {
-  min-width: 25%; /* Exibir quatro cards por vez */
+  min-width: 25%; 
   box-sizing: border-box;
   padding: 20px;
   background-color: #fcf9de;
@@ -989,15 +969,6 @@ a:focus {
   color: #666;
 }
 
-  
-
-
-/*css topicos*/
-
-
-
-/*css down*/
-
 .containerteste {
   display: flex;
   justify-content: space-between;
@@ -1026,17 +997,17 @@ a:focus {
 
 .botoes-container {
   display: flex;
-  justify-content: space-between; /* Espaça os botões igualmente */
-  width: 80%; /* Largura do container dos botões */
-  margin: 20px auto; /* Centraliza o container na página */
+  justify-content: space-between;
+  width: 80%; 
+  margin: 20px auto; 
 }
 
 .botao {
-  flex: 1; /* Os botões terão o mesmo tamanho */
-  margin: 0 7px; /* Espaçamento entre os botões */
-  padding: 25px 25px; /* Espaçamento interno dos botões */
-  font-size: 16px; /* Tamanho da fonte dos botões */
-  cursor: pointer; /* Cursor de mão ao passar o mouse sobre os botões */
+  flex: 1; 
+  margin: 0 7px; 
+  padding: 25px 25px; 
+  font-size: 16px; 
+  cursor: pointer; 
   border-radius: 8px;
   background-color: #A2AEF7;
   color: #fcf9de;
@@ -1045,7 +1016,7 @@ a:focus {
 }
 
 .botao:hover {
-  background-color: #c8cefa; /* Cor de fundo ao passar o mouse */
+  background-color: #c8cefa; 
 }
 
 
@@ -1061,54 +1032,54 @@ a:focus {
 }
 
 .coluna-esquerda {
-  flex: 1; /* O subtítulo e o texto ocupam 1 parte do container */
-  margin-right: 20px; /* Espaçamento entre o texto e a imagem */
+  flex: 1; 
+  margin-right: 20px; 
 }
 
 .coluna-esquerda h3 {
-  margin: 0 0 10px 0; /* Margem inferior do subtítulo */
+  margin: 0 0 10px 0; 
   font-size: 20px;
-  color: #A2AEF7; /* Cor do subtítulo */
+  color: #A2AEF7; 
 }
 
 .coluna-esquerda p {
-  margin: 0; /* Remove a margem superior e inferior do texto */
+  margin: 0; 
   font-size: 16px;
-  color: #666; /* Cor do texto */
-  line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+  color: #666; 
+  line-height: 1.6; 
 }
 
 .coluna-direita {
-  flex: 1; /* A imagem ocupa 1 parte do container */
+  flex: 1; 
 }
 
 .coluna-direita img {
-  width: 70%; /* Largura total para a imagem */
-  height: auto; /* Mantém a proporção da imagem */
-  border-radius: 8px; /* Bordas arredondadas para a imagem */
+  width: 70%; 
+  height: auto; 
+  border-radius: 8px; 
 }
 
 .depoimento-container {
   display: flex;
-  align-items: flex-start; /* Alinha o conteúdo ao topo */
-  background-color: white; /* Cor de fundo do container */
-  border-radius: 8px; /* Bordas arredondadas para o container */
+  align-items: flex-start; 
+  background-color: white; 
+  border-radius: 8px; 
   padding: 20px;
-  max-width: 600px; /* Largura máxima do container */
-  margin: 0 auto; /* Centraliza o container na página */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.267); /* Sombra para dar profundidade */
+  max-width: 600px; 
+  margin: 0 auto; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.267); 
 }
 
 .perfil-imagem {
-  flex-shrink: 0; /* Impede que a imagem diminua */
-  margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+  flex-shrink: 0; 
+  margin-right: 20px; 
 }
 
 .perfil-imagem img {
-  width: 100px; /* Largura da imagem */
-  height: 100px; /* Altura da imagem */
-  border-radius: 50%; /* Torna a imagem circular */
-  object-fit: cover; /* Cobre a área da imagem mantendo o aspecto */
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  object-fit: cover;
 }
 
 .depoimento-texto {
@@ -1116,16 +1087,16 @@ a:focus {
 }
 
 .depoimento-texto h3 {
-  margin: 0 0 10px 0; /* Margem abaixo do título */
+  margin: 0 0 10px 0; 
   font-size: 18px;
-  color: #333; /* Cor do título */
+  color: #333; 
 }
 
 .depoimento-texto p {
   margin: 0;
   font-size: 16px;
-  line-height: 1.5; /* Altura da linha para melhor legibilidade */
-  color: #666; /* Cor do texto */
+  line-height: 1.5;
+  color: #666;
 }
 
 .containerpur {
@@ -1138,98 +1109,80 @@ a:focus {
   border-radius: 8px;
 }
 
-/*css down*/
-
-
-
-/*css equipe*/
-
 .equipe-container {
   display: flex;
-  justify-content: space-between; /* Espaça igualmente os membros da equipe */
-  align-items: center; /* Alinha as imagens no centro verticalmente */
-  max-width: 1200px; /* Largura máxima do container da equipe */
-  margin: 0 auto; /* Centraliza o container na página */
-  flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+  justify-content: space-between; 
+  align-items: center;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  flex-wrap: wrap; 
 }
 
 .membro-equipe {
-  text-align: center; /* Centraliza o texto de cada membro */
-  flex: 1; /* Faz com que cada membro ocupe o mesmo espaço */
+  text-align: center; 
+  flex: 1;
   padding: 10px;
-  max-width: 200px; /* Largura máxima de cada membro para garantir espaçamento */
+  max-width: 200px; 
 }
 
 .membro-equipe img {
-  width: 100px; /* Largura da imagem */
-  height: 100px; /* Altura da imagem */
-  border-radius: 50%; /* Torna a imagem circular */
-  object-fit: cover; /* Cobre a área da imagem mantendo o aspecto */
-  margin-bottom: 10px; /* Espaço abaixo da imagem */
+  width: 100px;
+  height: 100px; 
+  border-radius: 50%; 
+  object-fit: cover;
+  margin-bottom: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .membro-equipe h3 {
-  margin: 7px 0; /* Margem acima e abaixo do nome */
+  margin: 7px 0; 
   font-size: 16px;
-  color: #333; /* Cor do título (nome) */
+  color: #333;
 }
 
 .membro-equipe p {
-  margin: 0; /* Remove margens do subtítulo */
+  margin: 0; 
   font-size: 14px;
-  color: #777; /* Cor do subtítulo (função) */
+  color: #777; 
 }
 
-/*css equipe*/
 
 
 
-/*configuração do link dos botoes dos topicos do index*/
 .atop{
   color: #8c9bfc;
   font-size: 23px;  
 }
 
 .atop:hover {
-  background-color: #c1c8f8; /* Cor de fundo ao passar o mouse */
+  background-color: #c1c8f8; 
   border-radius: 5px;
   color: #000000;
 }
-/*configuração do link dos botoes dos topicos do index*/
 
 
 
-/*configuração texto index - sobre nosso projeto*/
 .psaiba{
   text-align: justify;
   font-size: 20px;
   color: #000000;
 }
-/*configuração texto index - sobre nosso projeto*/
 
 
 
-/*configuração do link equipe index*/
 .aequipe{
   color: #8c9bfc;
   font-size: 17px;
 }
 
 .aequipe:hover {
-  background-color: #c1c8f8; /* Cor de fundo ao passar o mouse */
+  background-color: #c1c8f8; 
   border-radius: 5px;
   color: #000000;
 }
-/*configuração do link equipe index*/
 
-
-
-
-
-/*configuração saiba mais*/
 .fundo-teste{
-  background-image: url('https://i.pinimg.com/736x/81/a9/8f/81a98f3d514179eb05a4d75246c8e9ed.jpg') ; /* Substitua pela URL da sua imagem */
+  background-image: url('https://i.pinimg.com/736x/81/a9/8f/81a98f3d514179eb05a4d75246c8e9ed.jpg') ; 
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -1250,11 +1203,9 @@ a:focus {
   background-color: #faf6e2;
   text-align: justify;
 }
-/*configuração saiba mais*/
 
 
 
-/*configuração txt down e autismo*/
 .config-txt{
   text-align: justify;
   font-size: 17px;
@@ -1271,56 +1222,47 @@ a:focus {
   text-align: justify;
   font-size: 17px;
 }
-/*configuração txt down e autismo*/
-
-
-
 
 #sidebarMenu {
   position: fixed;
   top: 0;
-  left: -250px; /* Alterado de 'right' para 'left' */
+  left: -250px; 
   height: 100%;
   width: 250px;
   background-color: #A2AEF7;
-  transition: left 0.3s ease; /* Alterado de 'right' para 'left' */
+  transition: left 0.3s ease; 
   overflow-y: auto;
 }
 
-/* Quando ativo, move o menu para a direita (visível) */
 #sidebarMenu.active {
-  left: 0; /* Alterado de 'right' para 'left' */
+  left: 0; 
 }
 
-/* Estilos da barra de rolagem */
 #sidebarMenu::-webkit-scrollbar {
-  width: 8px; /* Largura da barra de rolagem */
+  width: 8px; 
 }
 
 #sidebarMenu::-webkit-scrollbar-track {
-  background: #f7f5e7; /* Cor de fundo da barra */
-  border-radius: 10px; /* Deixa os cantos arredondados */
+  background: #f7f5e7; 
+  border-radius: 10px; 
 }
 
 #sidebarMenu::-webkit-scrollbar-thumb {
-  background-color: #A2AEF7; /* Cor da barra de rolagem */
-  border-radius: 10px; /* Deixa os cantos da barra arredondados */
-  border: 2px solid #f7f5e7; /* Espaço entre a barra e o track */
+  background-color: #A2AEF7; 
+  border-radius: 10px; 
+  border: 2px solid #f7f5e7; 
 }
 
-/* Estilos para browsers que suportam a propriedade nativa (Firefox) */
 #sidebarMenu {
-  scrollbar-width: thin; /* Faz a barra de rolagem mais fina */
-  scrollbar-color: #A2AEF7 #f7f5e7; /* Cor da barra e do fundo */
+  scrollbar-width: thin; 
+  scrollbar-color: #A2AEF7 #f7f5e7; 
 }
 
-/* Links e texto do menu */
 #sidebarMenu .nav-link, #sidebarMenu h5 {
   color: white;
   padding: 10px 20px;
 }
 
-/* Estilos para o conteúdo da página */
 .content {
   padding: 20px;
 }
@@ -1333,7 +1275,6 @@ a:focus {
 .txt-titulo-acessibiliadade{
   color: #f7f5e7;
   margin-top: 10%;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   font-size: 1.5em;
   margin-bottom: 0%;
 }
@@ -1343,17 +1284,10 @@ a:focus {
   background-color: #f7f5e7;
   margin-bottom: 8%;
 }
-/* Estilos para o conteúdo da página */
 
-
-
-
-/* configuração de mudar a cor do site */
-
-/* Tema Tradicional */
 .traditional-theme {
-  background-color: #ffffff; /* Cor de fundo tradicional */
-  color: #333; /* Cor do texto tradicional */
+  background-color: #ffffff; 
+  color: #333; 
 }
 
 .traditional-theme h1,
@@ -1361,21 +1295,20 @@ a:focus {
 .traditional-theme h3,
 .traditional-theme h5,
 .traditional-theme li {
-  color: #A2AEF7; /* Cor dos títulos e textos no tema tradicional */
+  color: #A2AEF7; 
 }
 
 .traditional-theme .theme-button {
-  background-color: #f7f5e7; /* Azul para botões no tema tradicional */
-  color: #A2AEF7; /* Texto branco para botões no tema tradicional */
+  background-color: #f7f5e7; 
+  color: #A2AEF7; 
 }
 
 .traditional-theme button:hover{
-  color: #f7f5e7; /* Cor dos títulos e textos no tema claro */
+  color: #f7f5e7; 
   background-color: #7680c5;
 }
 
 
-/* Tema Monocromático */
 .monochrome-theme {
   background-color: white;
   color: black;
@@ -1476,17 +1409,16 @@ a:focus {
 }
 
 .high-contrast-dark-theme .theme-button button {
-  background-color: yellow; /* Amarelo para botões no tema escuro */
-  color: rgb(31, 31, 31); /* Texto preto para botões no tema escuro */
+  background-color: yellow; 
+  color: rgb(31, 31, 31); 
 }
 
 
 
 
-/* Tema Escuro */
 .dark-theme {
-  background-color: black; /* Fundo preto */
-  color: white; /* Texto branco */
+  background-color: black; 
+  color: white; 
 }
 
 .dark-theme h1,
@@ -1500,7 +1432,7 @@ a:focus {
 .dark-theme nav,
 .dark-theme a,
 .dark-theme header {
-  color: white; /* Cor dos títulos e textos no tema escuro */
+  color: white; 
   background-color: #000;
 }
 
@@ -1513,7 +1445,7 @@ a:focus {
   color: yellow;
 }
 .dark-theme .nav.itens_menu ul li a:hover {
-  background-color: blue; /* Cor de fundo ao passar o mouse */
+  background-color: blue; 
   border-radius: 5px;
   color: #000000;
 }
@@ -1521,12 +1453,12 @@ a:focus {
 
 
 .dark-theme button {
-  color: black; /* Cor dos títulos e textos no tema escuro */
+  color: black; 
   background-color: white;
 }
 
 .dark-theme button:hover {
-  color: white; /* Cor dos títulos e textos no tema escuro */
+  color: white; 
   background-color: gray;
 }
 
@@ -1545,11 +1477,10 @@ a:focus {
 }
 
 .dark-theme .theme-button:hover {
-  color: black; /* Cor dos títulos e textos no tema escuro */
+  color: black; 
   background-color: white;
 }
 
-/* Estilo dos botões */
 #theme-buttons {
   margin-top: 10px;
   
@@ -1561,23 +1492,19 @@ a:focus {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s; /* Suaviza a transição das cores */
+  transition: background-color 0.3s, color 0.3s; 
 }
-/* configuração de mudar a cor do site */
 
 
 
-/*titulo aceitação*/
-/* Container geral com mais espaço */
 .container-aceitacao {
   display: flex;
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  align-items: center; /* Alinha os elementos verticalmente */
+  justify-content: center; 
+  align-items: center; 
   padding: 20px;
-  gap: 250px; /* Aumenta o espaço entre os títulos e o texto */
-}
+  gap: 250px; 
+  }
 
-/* Centraliza os títulos */
 .titles {
   text-align: center;
 }
@@ -1588,52 +1515,42 @@ a:focus {
   margin: 5px 0;
 }
 
-/* Ajusta o tamanho do texto e sua largura */
 .text {
-  max-width: 500px; /* Aumenta a largura máxima do texto */
+  max-width: 500px; 
   margin-left: 15px;
 }
 
 .text p {
   font-size: 18px;
-  line-height: 1.6; /* Espaçamento de linha maior para melhor leitura */
+  line-height: 1.6; 
 }
-/*titulo aceitação*/
 
 
 
 
-
-
-/*RESPONSIVIDADE EQUIPE E TITULO*/
-/* Responsividade para telas menores */
 @media (max-width: 768px) {
-/* Centralizando e ajustando os títulos */
 .container h1, .container h2, .container h3 {
    font-size: 1.5rem;
    text-align: center;
-   margin-top: 20px; /* Abaixando os títulos */
+   margin-top: 20px; 
   }
 
-/* Garantindo que as imagens permaneçam em formato circular */
 .circle-image {
    display: flex;
    justify-content: center;
-   flex-wrap: wrap; /* Manter as imagens circulares */
+   flex-wrap: wrap; 
     }
 
  .circle-item img {
-  width: 80px; /* Reduzindo o tamanho das imagens */
+  width: 80px; 
   height: 80px;
       }
 
-/* Posicionando o link "Conheça nossa equipe" abaixo das imagens */
   .equipe {
    text-align: center;
    margin-top: 20px;
     }
 
- /* Ajustando a imagem de fundo */
  .teste img {
     width: 100%;
     height: auto;
@@ -1642,8 +1559,6 @@ a:focus {
 /*RESPONSIVIDADE EQUIPE E TITULO*/
 
 
-
-/*configuração footer*/
 footer {
   background-color: #f2f2f2;
   padding: 20px;
@@ -1698,7 +1613,7 @@ footer div {
   color: #000000;
 }
 .txt-footer:hover {
-  background-color: #c1c8f8; /* Cor de fundo ao passar o mouse */
+  background-color: #c1c8f8; 
   border-radius: 5px;
   color: #000000;
 }
@@ -1712,11 +1627,10 @@ footer div {
 /*RESPONSIVIDADE FOOTER*/
 @media (max-width: 768px) {
   footer div {
-    flex: 1 1 100%; /* Ocupa 100% da largura em telas pequenas */
+    flex: 1 1 100%; 
     margin-bottom: 20px;
   }
 
-  /* Ordem dos elementos para telas pequenas */
   .sobre {
     order: 1;
   }
@@ -1736,19 +1650,15 @@ footer div {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   footer div {
-    flex: 1 1 45%; /* Ocupa 45% em tablets */
+    flex: 1 1 45%; 
   }
 }
 
 footer div:last-child {
-  margin-bottom: 0; /* Remove a margem do último item */
+  margin-bottom: 0; 
 }
 /*RESPONSIVIDADE FOOTER*/
-/*configuração footer*/
 
-
-
-/*card atividades*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1760,7 +1670,6 @@ body {
   background-color: #f8f6e79d;
 }
 
-/* Container de fundo */
 .cards-bg {
   background-color: white;
   padding: 40px;
@@ -1775,7 +1684,6 @@ body {
   margin: 40px auto;
 }
 
-/* Estilo dos cards */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1818,19 +1726,19 @@ body {
 }
 
 .card-content a {
-  background-color: #c1c8f8; /* Cor de fundo ao passar o mouse */
+  background-color: #c1c8f8; 
   border-radius: 3px;
   color: #5b66ac;
   font-weight: lighter;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.267); /* Sombra para dar profundidade */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.267); 
 }
 
 .card-content a:hover {
-  background-color: #f2f2f2; /* Cor de fundo ao passar o mouse */
+  background-color: #f2f2f2; 
   border-radius: 3px;
   color: #000000;
   font-weight: lighter;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.267); /* Sombra para dar profundidade */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.267); 
 }
 
 
@@ -1840,7 +1748,6 @@ body {
       grid-template-columns: 1fr;
   }
 }
-/*card atividades*/
 
 footer {
   background-color: #FCF8CC;
@@ -1858,14 +1765,14 @@ footer {
 }
 
 .logo-section img {
-  width: 180px; /* Aumentei o tamanho da logo */
+  width: 180px; 
 }
 
 .links-section {
   display: flex;
   justify-content: space-between;
   flex: 1;
-  margin-left: 50px; /* Ajusta o espaçamento da logo */
+  margin-left: 50px; 
 }
 
 .links-section h4 {
@@ -1894,7 +1801,6 @@ footer {
   color: #555;
   text-decoration: none;
   transition: color 0.3s;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.267);
 }
 
 .shop-links a:hover {
@@ -1930,7 +1836,7 @@ footer {
 
 .contact-section li i {
   margin-right: 10px;
-  color: #A2AEF7; /* Cor dos ícones de contato */
+  color: #A2AEF7; 
 }
 
 .contact-section a {

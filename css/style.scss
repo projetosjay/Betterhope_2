@@ -20,10 +20,6 @@ $black:#000000;
   font-family: 'Open Sans', sans-serif;
 }
 
-h1,
-h2,
-h3 {}
-
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $radius) {
   display: inline-block;
   padding: $pad1 $pad2;
@@ -114,7 +110,6 @@ body {
 }
 
 
-/*header section*/
 .hero_area {
   height: 100vh;
   background-image: url(../images/hero-bg.png);
@@ -256,7 +251,7 @@ a:focus {
       
     }
     h6 {
-      margin-top: -60%; /* Ajuste o valor conforme necessário */
+      margin-top: -60%; 
   }
 
     p {
@@ -292,8 +287,6 @@ a:focus {
     transform: translate(-50%, 55px);
   }
 
-  .carousel-control-next {}
-
 }
 
 
@@ -327,13 +320,9 @@ a:focus {
   }
 }
 
-// slider section
 
 
 
-// end slider section
-
-// custom menu
 .menu_fixed-position {
   position: fixed;
   top: 0;
@@ -380,9 +369,7 @@ a:focus {
   }
 }
 
-// end custom menu
 
-// about section
 
 .about_section {
   .row {
@@ -397,7 +384,6 @@ a:focus {
   }
 
   .detail-box {
-    // padding-right: 35px;
 
     p {
       margin-top: 25px;
@@ -410,9 +396,7 @@ a:focus {
   }
 }
 
-// end about section
 
-// do section
 .do_section {
   .content-box {
     color: $white;
@@ -437,9 +421,7 @@ a:focus {
 }
 
 
-// end do section
 
-// skill section
 .skill_section {
   background-image: url(../images/skill-bg.jpg);
   background-size: cover;
@@ -488,10 +470,6 @@ a:focus {
 }
 
 
-// end skill section
-
-// portfolio section
-
 .portfolio_section {
   .row {
     .col-md-6 {
@@ -529,9 +507,7 @@ a:focus {
   }
 }
 
-// end portfolio section
 
-// client section
 
 .client_section {
   .custom_heading-container {
@@ -604,9 +580,7 @@ a:focus {
 }
 
 
-// end client_section
 
-// contact section
 .contact_section {
   background-color: #0ca57a;
   color: #fff;
@@ -663,10 +637,8 @@ a:focus {
   }
 }
 
-// end contact section
 
 
-// info section
 .info_section {
   background-color: #201f33;
   color: $white;
@@ -769,9 +741,7 @@ a:focus {
   }
 }
 
-// end info 
 
-/* footer*/
 
 .footer_section {
   background-color: #201f33;
@@ -795,4 +765,3 @@ a:focus {
 
 }
 
-// end footer section
